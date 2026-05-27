@@ -26,7 +26,7 @@ done
 SPEAKER_FOLDER="${SPEAKER##*/}"
 
 # EDIT THAT AS YOU WISH
-BASE_DIR="$HOME/Audio/Bjornulf/$LANGUAGE/$SPEAKER_FOLDER"
+BASE_DIR="$HOME/Audio/Emiguru/$LANGUAGE/$SPEAKER_FOLDER"
 
 # Function to show usage menu
 show_usage() {
@@ -59,7 +59,7 @@ list_speakers() {
 
 # Function to sanitize text like in the Python example
 sanitize_text() {
-  echo "$1" | sed 's/[^a-zA-Z0-9 _-]//g' | tr ' ' '_' | cut -c1-100 # Limit to 100 characters, it's 50 for now on Bjornulf lobe chat...
+  echo "$1" | sed 's/[^a-zA-Z0-9 _-]//g' | tr ' ' '_' | cut -c1-100 # Limit to 100 characters, it's 50 for now on Emiguru lobe chat...
 }
 
 # Shift the options to get the text argument
